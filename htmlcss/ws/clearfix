@@ -1,0 +1,7 @@
+clearfix
+
+floatの要素の解消方法
+下側に入ってくる要素をせき止める
+floatの親要素に適応する
+
+clearがfloatの実解除になる
