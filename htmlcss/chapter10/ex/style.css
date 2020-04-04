@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+main {
+	/*要素ごとずらすのでpaddingじゃなくてmargin*/
+	margin: 50px auto;
+	width: 960px;
+}
+
+/*
+img {
+	position: absolute;
+	right: 10px;
+}
+
+blockで扱いたいのでdivからbackground-imageでcss側の画像指定
+*/
+
+h3 {
+	margin: 5px 0;
+}
+
+.content {
+	position: relative;
+	width: 300px;
+	float: left;
+	margin-right: 30px;
+	/*外要素でpaddingしておく*/
+	padding: 10px;
+	text-align: left;
+	border: 1px solid #eee;
+}
+
+.content:last-child {
+	margin-right: 0;
+}
+
+.img1 {
+	height: 150px;/*実値指定*/
+	background-image: url(img/flow01.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.img2 {
+	height: 150px;
+	background-image: url(img/flow02.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.img3 {
+	height: 150px;
+	background-image: url(img/flow03.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*borderの外要素にたいしてabsolute*/
+.step {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: orange;
+	color: white;
+	padding: 3px;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 90%;
+	}
+
+	h3 {
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	.content {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-bottom: 20px;
+		margin-right: 0px;
+	}
+
+	.img1, .img2, .img3 {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.text {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
