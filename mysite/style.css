@@ -1,0 +1,475 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	font-size: 60px;
+}
+
+.fa-twitter{
+	font-size: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.header-area {
+	height: 70px;
+	width: 1024px;
+	background-color: #EC715F;
+	margin: 0 auto;
+}
+
+header {
+	height: 70px;
+	width: 100%;
+	background-color: #EC715F;
+}
+
+.fa-bars {
+	display: none;
+}
+
+nav {
+	height: 70px;
+	/*width: 1024px;*/
+	/*margin: 0 auto;*/
+	background-color: #EC715F;
+}
+
+ul {
+	/*width: 1024px;*/
+	margin: 0 auto;
+	line-height: 70px;
+	text-align: right;
+}
+
+li {
+	margin: 0 30px;
+	font-size: 16px;
+	color: #FAFAFA;
+	list-style: none;
+	display: inline-block;
+}
+
+.logo {
+	height: 100%;
+	float: left;
+}
+
+.main-visual {
+	width: 100%;
+	height: 650px;
+	text-align: center;
+	background-image: url(img/mv.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.main-title {
+	padding-top: 200px;
+	padding-bottom: 10px;
+	font-size: 84px;
+	color: #FAFAFA;
+}
+
+.sub-text {
+	font-size: 20px;
+	color: #FAFAFA;
+}
+
+.portfolio-area {
+	background-color: #ECEFF1;
+}
+
+.portfolio {
+	width: 920px;
+	margin: 0 auto;
+	padding-top: 90px;
+	/*background-color: #ECEFF1;*/
+	text-align: center;
+}
+
+.title-text {
+	padding-bottom: 8px;
+	font-size: 32px;
+	color: #000000;
+}
+
+.default-text {
+	margin: 30px auto;
+	font-size: 16px;
+	color: #000000;
+}
+
+.strength .default-text, .profile-text-area .default-text {
+	text-align: left;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #000000;
+	/*margin-bottom: 90px;*/
+}
+
+.profile-text-area .default-text {
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #000000;
+}
+
+.border {
+	width: 70px;
+	margin: 0 auto;
+	border-bottom: solid 3px #EC715F;
+}
+
+.portfolio-images {
+	width: 920px;
+	height: 600px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.portfolio-image {
+	width: 300px;
+	height: 250px;
+	background-position: center;
+	background-size: cover;
+	float: left;
+	/*background-image: url(img/webcamp.png);*/
+}
+
+.portfolio-image:nth-child(1) {
+	background-image: url(img/sketch.jpg);
+}
+
+.portfolio-image:nth-child(2) {
+	background-image: url(img/websuku.png);
+	margin-left: 10px;
+}
+
+.portfolio-image:nth-child(3) {
+	background-image: url(img/write.jpg);
+	margin-left: 10px;
+}
+
+.portfolio-image:nth-child(4) {
+	background-image: url(img/webcamp.png);
+	margin-top: 10px;
+}
+
+.portfolio-image:nth-child(5) {
+	background-image: url(img/talk.jpg);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.portfolio-image:nth-child(6) {
+	background-image: url(img/webcamp-mother.png);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.feature {
+	width: 980px;
+	text-align: center;
+	margin: 90px auto;
+}
+
+.strength {
+	width: 320px;
+	float: left;
+	height: auto;
+}
+
+.strength:nth-child(2){
+	margin: 0 10px;
+}
+
+.strength-area {
+}
+
+.strength-title {
+	font-size: 20px;
+	color: #000000;
+	margin: 10px;
+}
+
+.profile-area {
+	padding: 90px 0;
+	background-color: #ECEFF1;
+}
+
+.profile {
+	width: 1024px;
+	margin: 0 auto;
+	background-color: #ECEFF1;
+	/*padding: 90px 0;*/
+	text-align: center;
+}
+
+.image-area {
+	/*background-color: red;*/
+	width: 512px;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+}
+
+.myimage {
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+	background-image: url(img/my-icon.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+.profile-text-area {
+	width: 512px;
+	text-align: left;
+	float: left;
+}
+
+.profile {
+
+}
+
+.profile-title {
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.contact-area {
+	padding: 90px 0;
+	text-align: center;
+}
+
+.contact {
+	width: 800px;
+	margin: 0 auto;
+	color: inherit;
+}
+
+.mail-area {
+	width: 400px;
+	margin: 0 auto;
+	float: left;
+}
+
+.mail-text {
+	display: inline-block;
+	text-align: left;
+}
+
+.sns-area {
+	width: 400px;
+	margin: 0 auto;
+	float: left;
+}
+
+.pad {
+	height: 20px;
+}
+
+.sns-text {
+	display: inline-block;
+	text-align: left;
+}
+
+footer {
+	font-size: 16px;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #FAFAFA;
+	background-color: #EC715F;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px){
+	.header-area {
+		height: 50px;
+		padding: 0 5%;
+	}
+
+	li {
+		display: none;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.fa-bars {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		font-size: 20px;
+		color: #FAFAFA;
+		border: solid 1px #FAFAFA;
+		margin: 5px 0;
+		right: 5%;
+		/*padding: auto;*/
+		line-height: 35px;
+		text-align: center;
+	}
+
+	.main-visual {
+		width: 100%;
+		height: 650px;
+		text-align: center;
+		background-image: url(img/code.png);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.main-title {
+		padding-top: 200px;
+		padding-bottom: 10px;
+		font-size: 40px;
+		color: #FAFAFA;
+	}
+
+	.sub-text {
+		font-size: 18px;
+		color: #FAFAFA;
+	}
+
+	.portfolio-images {
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		padding-bottom: 90px;
+	}
+
+	.portfolio-image:nth-child(even) {
+		width: 300px;
+		height: 250px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.portfolio-image:nth-child(4) {
+		width: 300px;
+		height: 250px;
+		float: none;
+		margin: 10px auto;
+	}
+
+	.portfolio-image:nth-child(odd) {
+		display: none;
+	}
+
+	.portfolio {
+		width: 90%;
+		margin: 0 auto;
+		padding-top: 90px;
+		/*background-color: #ECEFF1;*/
+		text-align: center;
+	}
+
+	.default-text {
+		margin: 30px auto;
+		font-size: 16px;
+		color: #000000;
+	}
+
+	.feature {
+		width: 90%;
+		text-align: center;
+		margin: 90px auto;
+	}
+
+	.strength {
+		width: 90%;
+		float: none;
+		height: auto;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.strength:nth-child(2) {
+		margin: 10px auto;
+	}
+
+	.strength .default-text, .profile-text-area .default-text {
+		text-align: center;
+	}
+
+	.profile {
+		width: 90%;
+	}
+
+	.image-area {
+		width: 100%;
+		float: none;
+	}
+
+	.profile-text-area {
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	.profile-title {
+		margin-top: 20px;
+	}
+
+	.profile-text-area .default-text {
+		margin-bottom: 0px;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
+	.mail-area {
+		width: 100%;
+		float: none;
+	}
+
+	.mail-area .profile-title {
+		margin-top: 0;
+	}
+
+	.mail-text {
+		display: inline-block;
+		text-align: center;
+	}
+
+	.sns-area {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.pad {
+		height: 20px;
+	}
+
+	.sns-text {
+		display: inline-block;
+		text-align: center;
+	}
+
+	.fa-twitter{
+		font-size: 50px;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+}
