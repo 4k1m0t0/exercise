@@ -10,6 +10,15 @@
 	clear: both;
 }
 
+h2 {
+	font-size: 84px;
+	color: #FAFAFA;
+}
+
+h4 {
+	font-size: 20px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -32,7 +41,6 @@ i {
 }
 
 header {
-	height: 70px;
 	width: 100%;
 	background-color: #EC715F;
 }
@@ -75,69 +83,61 @@ li {
 	background-image: url(img/mv.png);
 	background-size: cover;
 	background-position: center;
-}
-
-.main-title {
 	padding-top: 200px;
-	padding-bottom: 10px;
-	font-size: 84px;
-	color: #FAFAFA;
 }
 
 .sub-text {
-	font-size: 20px;
+	margin-top: 10px;
 	color: #FAFAFA;
-}
-
-.portfolio-area {
-	background-color: #ECEFF1;
 }
 
 .portfolio {
 	width: 920px;
 	margin: 0 auto;
-	padding-top: 90px;
 	/*background-color: #ECEFF1;*/
 	text-align: center;
 }
 
 .title-text {
-	padding-bottom: 8px;
 	font-size: 32px;
 	color: #000000;
 }
 
+.title-text::after {
+	display: block;
+	content: "";
+	width: 70px;
+	height: 3px;
+	background-color: #EC715F;
+	margin: 8px auto auto;
+	/*border-bottom: solid 3px #EC715F;*/
+}
+
 .default-text {
-	margin: 30px auto;
+	padding: 30px 0;
 	font-size: 16px;
 	color: #000000;
+	text-align: center;
 }
 
 .strength .default-text, .profile-text-area .default-text {
 	text-align: left;
 	margin: 0 auto;
-	font-size: 16px;
-	color: #000000;
 	/*margin-bottom: 90px;*/
 }
 
 .profile-text-area .default-text {
-	margin-bottom: 20px;
+	padding: 0 0 20px;
 	font-size: 16px;
 	color: #000000;
 }
 
-.border {
-	width: 70px;
-	margin: 0 auto;
-	border-bottom: solid 3px #EC715F;
+.profile-text-area .default-text:last-child {
+	padding: 0;
 }
 
 .portfolio-images {
-	width: 920px;
-	height: 600px;
-	margin: 0 auto;
-	padding-bottom: 90px;
+	/*margin: 0 auto;*/
 }
 
 .portfolio-image {
@@ -149,41 +149,50 @@ li {
 	/*background-image: url(img/webcamp.png);*/
 }
 
+.portfolio-image:nth-child(3n-1) {
+	margin: 0 10px;
+}
+
+.portfolio-image:nth-child(n+4) {
+	margin-top: 10px;
+}
+
 .portfolio-image:nth-child(1) {
 	background-image: url(img/sketch.jpg);
 }
 
 .portfolio-image:nth-child(2) {
 	background-image: url(img/websuku.png);
-	margin-left: 10px;
 }
 
 .portfolio-image:nth-child(3) {
 	background-image: url(img/write.jpg);
-	margin-left: 10px;
 }
 
 .portfolio-image:nth-child(4) {
 	background-image: url(img/webcamp.png);
-	margin-top: 10px;
 }
 
 .portfolio-image:nth-child(5) {
 	background-image: url(img/talk.jpg);
-	margin-left: 10px;
-	margin-top: 10px;
 }
 
 .portfolio-image:nth-child(6) {
 	background-image: url(img/webcamp-mother.png);
-	margin-left: 10px;
-	margin-top: 10px;
+}
+
+.basic-background {
+	padding: 90px 0;
+}
+
+.basic-background:nth-child(even) {
+	background-color: #ECEFF1;
 }
 
 .feature {
 	width: 980px;
 	text-align: center;
-	margin: 90px auto;
+	margin: 0 auto;
 }
 
 .strength {
@@ -196,24 +205,15 @@ li {
 	margin: 0 10px;
 }
 
-.strength-area {
-}
-
 .strength-title {
 	font-size: 20px;
 	color: #000000;
-	margin: 10px;
-}
-
-.profile-area {
-	padding: 90px 0;
-	background-color: #ECEFF1;
+	margin: 10px auto;
 }
 
 .profile {
 	width: 1024px;
 	margin: 0 auto;
-	background-color: #ECEFF1;
 	/*padding: 90px 0;*/
 	text-align: center;
 }
@@ -242,51 +242,36 @@ li {
 	float: left;
 }
 
-.profile {
-
-}
-
 .profile-title {
 	font-size: 20px;
 	color: #000000;
 	margin-bottom: 5px;
 }
 
-.contact-area {
-	padding: 90px 0;
+.contact {
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	color: inherit;
 	text-align: center;
 }
 
-.contact {
-	width: 800px;
-	margin: 0 auto;
-	color: inherit;
+.mail {
+	margin-bottom: 20px;
+	display: inline-block;
 }
 
-.mail-area {
+.link-box {
 	width: 400px;
 	margin: 0 auto;
 	float: left;
 }
 
-.mail-text {
+.link-box-prof {
+	height: auto;
 	display: inline-block;
 	text-align: left;
-}
-
-.sns-area {
-	width: 400px;
-	margin: 0 auto;
-	float: left;
-}
-
-.pad {
-	height: 20px;
-}
-
-.sns-text {
-	display: inline-block;
-	text-align: left;
+	float: none;
 }
 
 footer {
@@ -301,6 +286,7 @@ footer {
 
 @media screen and (max-width: 767px){
 	.header-area {
+		width: 100%;
 		height: 50px;
 		padding: 0 5%;
 	}
@@ -337,23 +323,22 @@ footer {
 		background-position: center;
 	}
 
-	.main-title {
-		padding-top: 200px;
-		padding-bottom: 10px;
+	.main-visual-text {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h2 {
 		font-size: 40px;
-		color: #FAFAFA;
 	}
 
 	.sub-text {
 		font-size: 18px;
-		color: #FAFAFA;
 	}
 
 	.portfolio-images {
-		width: 90%;
 		height: auto;
 		margin: 0 auto;
-		padding-bottom: 90px;
 	}
 
 	.portfolio-image:nth-child(even) {
@@ -364,9 +349,6 @@ footer {
 	}
 
 	.portfolio-image:nth-child(4) {
-		width: 300px;
-		height: 250px;
-		float: none;
 		margin: 10px auto;
 	}
 
@@ -377,21 +359,12 @@ footer {
 	.portfolio {
 		width: 90%;
 		margin: 0 auto;
-		padding-top: 90px;
 		/*background-color: #ECEFF1;*/
 		text-align: center;
 	}
 
-	.default-text {
-		margin: 30px auto;
-		font-size: 16px;
-		color: #000000;
-	}
-
 	.feature {
 		width: 90%;
-		text-align: center;
-		margin: 90px auto;
 	}
 
 	.strength {
@@ -406,12 +379,21 @@ footer {
 		margin: 10px auto;
 	}
 
-	.strength .default-text, .profile-text-area .default-text {
+	.strength .default-text {
+		padding: 0;
+		text-align: center;
+	}
+
+	.profile-text-area .default-text {
 		text-align: center;
 	}
 
 	.profile {
 		width: 90%;
+	}
+
+	.profile-title {
+		padding-top: 20px;
 	}
 
 	.image-area {
@@ -425,51 +407,38 @@ footer {
 		float: none;
 	}
 
-	.profile-title {
-		margin-top: 20px;
-	}
-
 	.profile-text-area .default-text {
-		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
 
 	.contact {
 		width: 90%;
 	}
 
-	.mail-area {
-		width: 100%;
-		float: none;
-	}
-
-	.mail-area .profile-title {
-		margin-top: 0;
-	}
-
-	.mail-text {
-		display: inline-block;
-		text-align: center;
-	}
-
-	.sns-area {
+	.link-box {
 		width: 100%;
 		margin: 0 auto;
 		float: none;
 	}
 
-	.pad {
-		height: 20px;
+	.m{
+		padding: 0;
 	}
 
-	.sns-text {
-		display: inline-block;
+	.link-box-prof {
 		text-align: center;
 	}
 
-	.fa-twitter{
+	.link-box-prof .fab {
 		font-size: 50px;
-		margin-left: 8px;
-		margin-right: 8px;
+	}
+
+	.mail {
+		margin: 0;
+	}
+
+	.fa-twitter{
+		margin: 0 8px;
 	}
 
 }
